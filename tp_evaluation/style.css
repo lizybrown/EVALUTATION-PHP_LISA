@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding:0%;
+
+}
+
+
+/* inscription  */
+
+.inscription{
+    display : flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+
+}
+
+h1{
+
+    font-size:80px;
+   text-align: center;
+   padding-bottom: 50px;
+}
+
+
+/* section principale */
+
+.main{
+
+    margin : 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* toutes les cartes  */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+.card img{
+    width: 350px;
+}
+
+.cards .card .card-header{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.cards .card .card-body p{
+
+    margin-top: -10px;
+}
+
+/* fin des cartes  */
+
+/* fin de section principale  */
+
+
+/* video de presentation */
+
+.main .video{
+    margin-top: 80px;
+    width: 90%;
+
+}
+
+.main .video iframe{
+
+border: none;
+border-radius: 10px;
+width: 100%;
+height: 400px;
+}
+
+/* fin de la video de presentation */
+
+
+/* section pied de page  */
+
+footer{
+margin-top: 100px;
+background-color: rgb(10, 10, 10);
+color: #fff;
+display: flex;
+flex-wrap: wrap;
+padding: 30px;
+justify-content: space-between;
+}
+
+footer .social-media{
+display: flex;
+}
+
+footer .social-media p{
+    margin-right: 15px;
+    border:1px solid white;
+    border-radius: 100%;
+    padding:5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+
+}
+/* fin du pied de page  */
+
+
+@media screen  and (max-width:640px){
+    nav .onglets .link, nav h1{
+        display:none;
+
+    }
+    .cards.card{
+        margin: 10px;
+    }
+    .cards .card img{
+        width:300px;
+    }
+}
